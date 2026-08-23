@@ -123,7 +123,6 @@ import echo.music.iad1tya.ui.component.LoadingDialog
 import echo.music.iad1tya.ui.component.RippleIconButton
 import echo.music.iad1tya.ui.component.SettingItem
 import androidx.compose.foundation.Image
-import androidx.compose.ui.Alignment
 import org.jetbrains.compose.resources.painterResource
 import echomusic.composeapp.generated.resources.hyperlabs_logo
 import echo.music.iad1tya.ui.icon.ArrowBackIosNew
