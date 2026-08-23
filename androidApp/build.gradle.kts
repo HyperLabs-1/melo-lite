@@ -15,7 +15,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "echo.music.iad1tya"
+        applicationId = "com.hyperlabs.melolite"
         minSdk = 26
         targetSdk = 36
         versionCode =
