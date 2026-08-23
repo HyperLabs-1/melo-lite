@@ -122,6 +122,10 @@ import echo.music.iad1tya.ui.component.EndOfPage
 import echo.music.iad1tya.ui.component.LoadingDialog
 import echo.music.iad1tya.ui.component.RippleIconButton
 import echo.music.iad1tya.ui.component.SettingItem
+import androidx.compose.foundation.Image
+import androidx.compose.ui.Alignment
+import org.jetbrains.compose.resources.painterResource
+import echomusic.composeapp.generated.resources.hyperlabs_logo
 import echo.music.iad1tya.ui.icon.ArrowBackIosNew
 import echo.music.iad1tya.ui.icon.Close
 import echo.music.iad1tya.ui.icon.Error
@@ -2169,26 +2173,27 @@ fun SettingScreen(
                         sharedViewModel.checkForUpdate()
                     },
                 )
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 12.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Image(
+                        painter = painterResource(Res.drawable.hyperlabs_logo),
+                        contentDescription = "HyperLabs",
+                        modifier = Modifier.size(56.dp).padding(bottom = 8.dp)
+                    )
+                    Text(
+                        text = "Developed by HyperLabs",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
                 SettingItem(
-                    title = stringResource(Res.string.author),
-                    subtitle = stringResource(Res.string.iad1tya_dev),
+                    title = "HyperLabs",
+                    subtitle = "Follow us on Instagram",
                     onClick = {
-                        uriHandler.openUri("https://iad1tya.cyou")
-                    },
-                )
-
-                SettingItem(
-                    title = stringResource(Res.string.buy_me_a_coffee),
-                    subtitle = stringResource(Res.string.donation),
-                    onClick = {
-                        uriHandler.openUri("https://buymeacoffee.com/iad1tya")
-                    },
-                )
-                SettingItem(
-                    title = stringResource(Res.string.support_upi_crypto),
-                    subtitle = stringResource(Res.string.support_url),
-                    onClick = {
-                        uriHandler.openUri("https://support.iad1tya.cyou/")
+                        uriHandler.openUri("https://www.instagram.com/hyperlabs.io")
                     },
                 )
 
