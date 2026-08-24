@@ -33,8 +33,8 @@ android {
         applicationId = "com.hyperlabs.melolite"
         minSdk = 26
         targetSdk = 36
-        versionCode = 529
-        versionName = "5.2.89"
+        versionCode = 530
+        versionName = "1.2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
