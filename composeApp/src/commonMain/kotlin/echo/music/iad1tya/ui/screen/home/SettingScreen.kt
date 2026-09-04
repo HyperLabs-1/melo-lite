@@ -1674,21 +1674,8 @@ fun SettingScreen(
                     },
                     isEnable = enableSponsorBlock,
                 )
-                val beforeUrl = stringResource(Res.string.sponsor_block_intro).substringBefore()
-                val afterUrl = stringResource(Res.string.sponsor_block_intro).substringAfter()
-                Text(
-                    buildAnnotatedString {
-                        append(beforeUrl)
-                        withLink(
-                            LinkAnnotation.Url(
-                                "https://sponsor.ajay.app/",
-                                TextLinkStyles(style = SpanStyle(color = MaterialTheme.colorScheme.primary)),
-                            ),
-                        ) {
-                            append("https://sponsor.ajay.app/")
-                        }
-                        append(afterUrl)
-                    },
+                                Text(
+                    text = stringResource(Res.string.sponsor_block_intro),
                     style = typo().bodySmall,
                     modifier = Modifier.padding(horizontal = 24.dp, vertical = 16.dp),
                 )
@@ -2141,8 +2128,8 @@ fun SettingScreen(
                         }
                     },
                     otherView = {
-                        tap here to import your backup(
-                            text = "",
+                        Text(
+                            text = "Tap here to import your backup",
                             color = MaterialTheme.colorScheme.primary,
                             style = typo().bodyMedium,
                             textDecoration = TextDecoration.Underline,
