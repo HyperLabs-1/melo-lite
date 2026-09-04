@@ -1674,8 +1674,8 @@ fun SettingScreen(
                     },
                     isEnable = enableSponsorBlock,
                 )
-                val beforeUrl = stringResource(Res.string.sponsor_block_intro).substringBefore("https://sponsor.ajay.app/")
-                val afterUrl = stringResource(Res.string.sponsor_block_intro).substringAfter("https://sponsor.ajay.app/")
+                val beforeUrl = stringResource(Res.string.sponsor_block_intro).substringBefore()
+                val afterUrl = stringResource(Res.string.sponsor_block_intro).substringAfter()
                 Text(
                     buildAnnotatedString {
                         append(beforeUrl)
@@ -2141,8 +2141,8 @@ fun SettingScreen(
                         }
                     },
                     otherView = {
-                        Text(
-                            text = "https://echomusic.fun/migrate",
+                        tap here to import your backup(
+                            text = "",
                             color = MaterialTheme.colorScheme.primary,
                             style = typo().bodyMedium,
                             textDecoration = TextDecoration.Underline,
