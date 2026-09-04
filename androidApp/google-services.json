@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "887842405081",
-    "project_id": "echo-aab3b",
-    "storage_bucket": "echo-aab3b.firebasestorage.app"
+    "project_number": "960189923174",
+    "project_id": "melo-lite",
+    "storage_bucket": "melo-lite.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:887842405081:android:2be388a7f6a02d941a5cc8",
+        "mobilesdk_app_id": "1:960189923174:android:efc892a8088c007df152a7",
         "android_client_info": {
           "package_name": "com.hyperlabs.melolite"
         }
@@ -15,26 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCvXEL8c5TOPmYUo33ghC7Cf64qYUGWfZg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:887842405081:android:2be388a7f6a02d941a5cc8",
-        "android_client_info": {
-          "package_name": "echo.music.iad1tya.cyou"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCvXEL8c5TOPmYUo33ghC7Cf64qYUGWfZg"
+          "current_key": "AIzaSyA9AAAtPvnZYpgWzQ5u6dmkDfH9tTv1bhU"
         }
       ],
       "services": {
