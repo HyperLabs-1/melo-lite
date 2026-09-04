@@ -2119,26 +2119,6 @@ fun SettingScreen(
                         }
                     },
                 )
-                SettingItem(
-                    title = stringResource(Res.string.import_data),
-                    subtitle = stringResource(Res.string.import_playlists_from_other_apps),
-                    onClick = {
-                        coroutineScope.launch {
-                            importLauncher.launch()
-                        }
-                    },
-                    otherView = {
-                        Text(
-                            text = "Tap here to import your backup",
-                            color = MaterialTheme.colorScheme.primary,
-                            style = typo().bodyMedium,
-                            textDecoration = TextDecoration.Underline,
-                            modifier = Modifier.clickable {
-                                uriHandler.openUri("https://echomusic.fun/migrate")
-                            }.padding(vertical = 4.dp)
-                        )
-                    }
-                )
             }
         }
         item(key = "about_us") {
