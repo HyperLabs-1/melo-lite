@@ -38,6 +38,8 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import echo.music.iad1tya.crashlytics.configCrashlytics
 import echo.music.iad1tya.lastfm.configLastfm
+import echo.music.iad1tya.ads.AppOpenAdManager
+import com.google.android.gms.ads.MobileAds
 import java.lang.reflect.Field
 
 class EchoMusicApplication :
@@ -98,6 +100,14 @@ class EchoMusicApplication :
         AppContext.apply {
             set(applicationContext)
         }
+
+        // AdMob: shows an App Open ad only when the app launches or returns to the
+        // foreground — never mid-playback, since playback runs in a background Service.
+        MobileAds.initialize(this) {}
+        AppOpenAdManager.attach(
+            application = this,
+            adUnitId = "ca-app-pub-6843482124817332/6243360121",
+        )
     }
 
     override fun onTerminate() {
