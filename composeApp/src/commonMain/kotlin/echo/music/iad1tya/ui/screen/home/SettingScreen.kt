@@ -553,7 +553,12 @@ fun SettingScreen(
             if (isCheckingUpdate) {
                 return@derivedStateOf runBlocking { getString(Res.string.checking) }
             } else {
-                val lastCheckLong = lastCheckUpdate?.toLong() ?: 0L
+                val lastCheckLong = lastCheckUpdate?.toLong()
+                if (lastCheckLong == null || lastCheckLong == 0L) {
+                    return@derivedStateOf runBlocking {
+                        getString(Res.string.last_checked_at, getString(Res.string.never))
+                    }
+                }
                 return@derivedStateOf runBlocking {
                     getString(
                         Res.string.last_checked_at,

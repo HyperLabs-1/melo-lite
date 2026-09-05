@@ -645,7 +645,7 @@ if (data.scheme == "wordbyword" && data.host == "lastfm-auth") {
                                 onClick = {
                                     shouldShowUpdateDialog = false
                                     viewModel.showedUpdateDialog = false
-                                    openUrl("https://echomusic.fun/download")
+                                    openUrl("https://github.com/HyperLabs-1/melo-lite/releases/latest")
                                 },
                             ) {
                                 Text(
